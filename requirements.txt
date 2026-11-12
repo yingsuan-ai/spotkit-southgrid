@@ -1,0 +1,13 @@
+# SpotKit-SouthGrid 开源外壳 · 依赖说明
+#
+# 核心四件套（spotprobe / deviationsim / billparser / plantaudit）
+# 仅使用 Python 3 标准库（csv / json / re / math / argparse / os / sys），
+# 无需任何第三方依赖即可运行。
+#
+# 以下为【可选】依赖：
+#   - matplotlib ：仅 SpotProbe 在显式加 --png 时需要，用于额外导出 PNG 走势图
+#                  默认输出为无依赖的 SVG，不装 matplotlib 也能用。
+#   - 推荐 Python 3.8+
+#
+# 安装可选依赖（不装不影响主流程）：
+#   pip install matplotlib
