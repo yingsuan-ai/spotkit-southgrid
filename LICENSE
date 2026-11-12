@@ -1,0 +1,38 @@
+MIT License
+
+Copyright (c) 2026 云南盈菜通电子商务有限公司（盈算智服）
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------------------------
+算法内核边界声明（Important）
+------------------------------------------------------------------------------
+本仓库（SpotKit-SouthGrid）仅包含「开源外壳」工具：现货探针、偏差考核
+模拟、电费单解析、虚拟工厂体检。这些工具用于教学、直觉建立与格式解析，
+全部逻辑透明、可复现。
+
+以下能力属于「算电宝™」闭源产品，**不在本仓库内**，且永不公开：
+  - 现货 / 节点电价预测模型
+  - L2 约束优化调度内核
+  - 能耗台账自动归集与节省核销引擎（M&V）
+  - 分润结算与聚合对账
+  - 任何 proprietary 算法、权重、参数或训练数据
+
+如需上述能力，请使用算电宝™专业版 / 售电双引擎 / 私有化部署。
+详见 https://yingsuan.top/power-advisor.html
