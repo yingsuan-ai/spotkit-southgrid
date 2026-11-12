@@ -101,4 +101,38 @@ spotkit-southgrid/
 
 ## English Abstract
 
-**SpotKit-SouthGrid** is an open-source toolkit for the **Southern Grid five-provider region (Yunnan/Guizhou/Guangxi/Guangdong/Hainan)** electricity end-user decision-making. It ships four transparent, reproducible "open-shell" tools — SpotProbe (spot-price probe), DeviationSim (deviation penalty simulator), BillParser (bill parser), and PlantAudit (virtual-plant health audit) — bundled with a 2026 annual observation report & dataset. The proprietary kernels (price forecasting, constraint optimization, M&V settlement, revenue-share) live in the closed-source **算电宝™ (SuanDianBao)** product and are **never** included here. The repo works as a technical hook: clone → run demos → build intuition → bring your own data to the closed-source product. All bundled data is **synthetic/desensitized** and must not be used for real settlement.
+**SpotKit-SouthGrid** is an open-source toolkit for electricity end-user decision-making in the **Southern Grid five-provider region — Yunnan, Guizhou, Guangxi, Guangdong, Hainan**. Yunnan is the starting point and validation ground, not the finish line.
+
+It ships four transparent, reproducible "open-shell" tools — **SpotProbe** (spot-price probe), **DeviationSim** (deviation-penalty simulator), **BillParser** (bill to JSON), and **PlantAudit** (virtual-plant health audit) — bundled with the *2026 Southern Grid Five-Province Electricity Spot-Market Annual Observation* report and dataset.
+
+The proprietary kernels — price forecasting, L2 constraint-optimized dispatch, energy-ledger M&V settlement, and revenue-share accounting — live in the closed-source **SuanDianBao** product and are **never** included here. The repo is a technical hook: clone to run demos, build intuition, then bring your own data to the closed-source product.
+
+### What is inside (open shell)
+
+| Tool | What it does | Input to Output |
+|------|--------------|----------------|
+| **SpotProbe** | Desensitized sample spot-price exploration: weighted average, peak-valley spread, extreme events | price CSV to SVG chart + stats CSV |
+| **DeviationSim** | Transparent deviation-penalty simulation (plus-minus 5 percent threshold + illustrative unit price) | actual/declared curves to hourly detail CSV |
+| **BillParser** | Southern-Grid electricity bill to structured JSON | bill text to JSON |
+| **PlantAudit** | 4-dimension "electricity health" check for a virtual plant | load curve + profile to self-contained HTML report |
+
+### Quick start
+
+```bash
+git clone https://github.com/yingsuan-ai/spotkit-southgrid.git
+cd spotkit-southgrid
+python run_demo.py
+```
+
+### Boundaries (read before you trust it)
+
+1. **Five-provider region:** Yunnan, Guizhou, Guangxi, Guangdong, Hainan — Yunnan is the start, not the end.
+2. **Desensitized data:** all bundled samples are synthetic teaching data; not for real settlement.
+3. **No savings promises:** the open tools only display, statistic, and teach. They imply no guarantee, no quantified savings, no settlement basis.
+4. **Kernels stay closed:** forecasting, optimization, M&V, revenue-share — not in this repo, ever.
+5. **Free tier, no trap:** SuanDianBao free base tier is **full-year free** health diagnosis with data never leaving your machine; there is no "21-day-then-charge" scheme.
+6. **Dual-engine for resellers:** the reseller view is "risk desk (annual fee) + white-label seats (per-account per year)" — a different product line from the enterprise Standard tier.
+
+Bring your own data to run the full diagnosis and optimization (free base tier, data never leaves your machine):
+
+👉 **https://yingsuan.top/power-advisor.html?utm_source=github&utm_medium=repo&utm_campaign=spotkit_southgrid**
