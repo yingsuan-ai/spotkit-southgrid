@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" font-family="sans-serif" font-size="12">
+<rect width="900" height="420" fill="#fff"/>
+<line x1="60" y1="380.0" x2="880" y2="380.0" stroke="#eee"/><text x="54" y="384.0" text-anchor="end" fill="#888">0.00</text>
+<line x1="60" y1="310.0" x2="880" y2="310.0" stroke="#eee"/><text x="54" y="314.0" text-anchor="end" fill="#888">0.16</text>
+<line x1="60" y1="240.0" x2="880" y2="240.0" stroke="#eee"/><text x="54" y="244.0" text-anchor="end" fill="#888">0.32</text>
+<line x1="60" y1="170.0" x2="880" y2="170.0" stroke="#eee"/><text x="54" y="174.0" text-anchor="end" fill="#888">0.48</text>
+<line x1="60" y1="100.0" x2="880" y2="100.0" stroke="#eee"/><text x="54" y="104.0" text-anchor="end" fill="#888">0.63</text>
+<line x1="60" y1="30.0" x2="880" y2="30.0" stroke="#eee"/><text x="54" y="34.0" text-anchor="end" fill="#888">0.79</text>
+<polyline fill="none" stroke="#e6194b" stroke-width="2" points="60.0,283.1 265.0,282.9 470.0,283.7 675.0,263.0 880.0,280.5"/>
+<rect x="70" y="397" width="10" height="10" fill="#e6194b"/><text x="84" y="406" fill="#333">云南</text>
+<polyline fill="none" stroke="#3cb44b" stroke-width="2" points="60.0,277.1 265.0,277.0 470.0,277.8 675.0,256.7 880.0,276.8"/>
+<rect x="290" y="397" width="10" height="10" fill="#3cb44b"/><text x="304" y="406" fill="#333">贵州</text>
+<polyline fill="none" stroke="#4363d8" stroke-width="2" points="60.0,266.0 265.0,265.3 470.0,266.5 675.0,242.3 880.0,266.0"/>
+<rect x="510" y="397" width="10" height="10" fill="#4363d8"/><text x="524" y="406" fill="#333">广西</text>
+<polyline fill="none" stroke="#f58231" stroke-width="2" points="60.0,236.6 265.0,239.1 470.0,237.2 675.0,209.8 880.0,236.5"/>
+<rect x="70" y="381" width="10" height="10" fill="#f58231"/><text x="84" y="390" fill="#333">广东</text>
+<polyline fill="none" stroke="#911eb4" stroke-width="2" points="60.0,221.4 265.0,224.2 470.0,224.7 675.0,190.4 880.0,223.5"/>
+<rect x="290" y="381" width="10" height="10" fill="#911eb4"/><text x="304" y="390" fill="#333">海南</text>
+<text x="60.0" y="398" text-anchor="middle" fill="#666">10-10</text>
+<text x="265.0" y="398" text-anchor="middle" fill="#666">10-11</text>
+<text x="470.0" y="398" text-anchor="middle" fill="#666">10-12</text>
+<text x="675.0" y="398" text-anchor="middle" fill="#666">10-13</text>
+<text x="880.0" y="398" text-anchor="middle" fill="#666">10-14</text>
+<text x="60" y="16" fill="#333">每日加权均价（元/kWh，脱敏样本）</text>
+</svg>
